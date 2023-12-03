@@ -300,7 +300,7 @@ function App() {
         <h1>
           <img
             src="../logo.png"
-            alt="cmd app logo"
+            alt="V_M"
             style={{ height: "4rem" }}
             draggable="false"
           />
@@ -437,14 +437,14 @@ function App() {
               setTxt(e.target.value);
             }}
             onKeyUp={join}
-            className="shadow py-1 px-2"
+            className="shadow py-1 px-2 font-danger"
             style={{
-              border: "none",
+              border: " 3px solid",
               outline: "none",
-              borderRadius: "10px",
+              borderRadius: "12px",
               fontSize: "1.4rem",
             }}
-            placeholder="enter your name to join"
+            placeholder="Enter Your Name To Join"
           />
         </div>
       ) : (
@@ -454,7 +454,7 @@ function App() {
         >
           <input
             type="text"
-            placeholder="chat.."
+            placeholder="Enter Your Message Here..."
             value={chat}
             className="card py-1 px-2 shadow"
             style={{
@@ -467,7 +467,7 @@ function App() {
             onKeyUp={send}
             id="chatbox"
           />
-          <button className="btn mx-1 shadow">
+          <button className="btn mx-1 shadow bg-info">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
